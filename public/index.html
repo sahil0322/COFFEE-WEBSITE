@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGMAA Beans - Find Your Daily Aura</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="container navbar">
+            <a href="#home" class="logo nav-page-link">SIGMAA BEANS</a>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="nav-link nav-page-link active">Home</a></li>
+                    <li><a href="#menu" class="nav-link nav-page-link">Menu</a></li>
+                    <li><a href="#shop" class="nav-link nav-page-link">Shop</a></li>
+                    <li><a href="#locations" class="nav-link nav-page-link">Locations</a></li>
+                    <li><a href="#contact" class="nav-link nav-page-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right">
+                <button class="cart-icon" id="cart-icon-btn" aria-label="Open cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="display: none;">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="page active">
+
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Find Your Daily Aura</h1>
+                    <p>Artisanal coffee, sustainably sourced.</p>
+                    <a href="#shop" class="btn nav-page-link">Shop Our Blends</a>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container">
+                    <h2 class="text-center">Featured Products</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carousel-track">
+                            <div class="carousel-slide">
+                                <div class="product-card">
+                                    <img src="https://t3.ftcdn.net/jpg/05/34/82/24/360_F_534822425_9Ok2L60rSndeunIM6sELPKvuDqzhopX7.jpg"
+                                        alt="Seasonal Roast">
+                                    <h3>Seasonal Roast</h3>
+                                    <p>A bright, festive blend with notes of cherry and dark chocolate.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="product-card">
+                                    <img src="https://cdn.shopify.com/s/files/1/0601/8783/6659/files/Classic_Cold_Brew_faa3d103-9f4f-4683-a48c-574ad1d06c92.png?v=1750796804"
+                                        alt="Classic Cold Brew">
+                                    <h3>Classic Cold Brew</h3>
+                                    <p>Our signature 18-hour steep, smooth, rich, and refreshing.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="product-card">
+                                    <img src="https://t4.ftcdn.net/jpg/01/76/51/73/360_F_176517375_TdfFVyrJahmr40ffqy1xBgUj9X07sVfB.jpg"
+                                        alt="Aura Beans Mug">
+                                    <h3>Sigma Beans Mug</h3>
+                                    <p>A ceramic, minimalist mug perfect for your daily ritual.For boosting you Aura</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="product-card">
+                                    <img src="https://wallpapercave.com/wp/wp15348478.png" alt="COFFEE">
+                                    <h3>Cappuccino Assassino</h3>
+                                    <p>Dont worry he is just a sigma like you, guarding your order.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" id="carousel-prev" aria-label="Previous slide">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="carousel-btn" id="carousel-next" aria-label="Next slide">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" style="background-color: var(--white-color);">
+                <div class="container brand-snippet-grid">
+                    <div class="brand-snippet-image">
+                        <img src="https://img.freepik.com/premium-photo/man-hand-holding-coffee-cup-coffee-bean-wooden-table_39704-807.jpg"
+                            alt="Coffee beans being sorted by hand">
+                    </div>
+                    <div class="brand-snippet-content">
+                        <h2>From Bean to Cup, With Purpose.</h2>
+                        <p>Aura Beans was founded on a simple principle: coffee should not only taste good, but do good.
+                            We partner directly with sustainable farms, ensuring fair wages for farmers and respecting
+                            the earth in every step of our process.</p>
+                        <a href="#" class="btn btn-secondary">Read Our Story</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container">
+                    <h2 class="text-center">What Our Customers Say</h2>
+                    <div class="testimonial-slider" id="testimonial-slider">
+                        <div class="testimonial-slide active">
+                            <blockquote>"The best cold brew I've ever had. It's my daily must-have. Aura Beans has
+                                ruined all other coffee for me!"</blockquote>
+                            <cite>— Alex R.</cite>
+                        </div>
+                        <div class="testimonial-slide">
+                            <blockquote>"I love the minimalist vibe of the shop and the staff is always so friendly.
+                                Their seasonal roast is always something new and exciting."</blockquote>
+                            <cite>— Maria K.</cite>
+                        </div>
+                        <div class="testimonial-slide">
+                            <blockquote>"Knowing their coffee is sustainably sourced makes every sip taste even better.
+                                The Aura Beans mug is also my new favorite."</blockquote>
+                            <cite>— David L.</cite>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section id="menu" class="page section-padding">
+            <div class="container">
+                <h2 class="text-center">Our Menu</h2>
+
+                <div class="menu-tabs" id="menu-tabs">
+                    <button class="tab-btn active" data-target="#hot-coffees">Hot Coffees</button>
+                    <button class="tab-btn" data-target="#iced-coffees">Iced Coffees</button>
+                    <button class="tab-btn" data-target="#teas">Teas</button>
+                    <button class="tab-btn" data-target="#pastries">Pastries</button>
+                </div>
+
+                <div id="hot-coffees" class="menu-category active">
+                    <div class="menu-item" data-name="Espresso" data-price="$3.00"
+                        data-description="A concentrated shot of our signature house blend."
+                        data-img="https://images.squarespace-cdn.com/content/v1/578fb6425016e1565263b5d6/1478762672479-1HR4XFWX8W2NPVL8VYSA/Cappuccino+at+Espresso+Cielo+Santa+Monica"
+                        data-dietary="vegan,gf">
+                        <div class="menu-item-header">
+                            <h4>Espresso</h4>
+                            <span class="menu-item-price">$3.00</span>
+                        </div>
+                        <p class="menu-item-description">A concentrated shot of our signature blend.</p>
+                    </div>
+                    <div class="menu-item" data-name="Cappuccino" data-price="$4.50"
+                        data-description="Equal parts espresso, steamed milk, and rich milk foam. A true classic."
+                        data-img="https://www.allrecipes.com/thmb/chsZz0jqIHWYz39ViZR-9k_BkkE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8624835-how-to-make-a-cappuccino-beauty-4x3-0301-13d55eaad60b42058f24369c292d4ccb.jpg"
+                        data-dietary="gf">
+                        <div class="menu-item-header">
+                            <h4>Cappuccino</h4>
+                            <span class="menu-item-price">$4.50</span>
+                        </div>
+                        <p class="menu-item-description">Espresso, steamed milk, and rich milk foam.</p>
+                    </div>
+                    <div class="menu-item" data-name="Caramel Latte" data-price="$5.00"
+                        data-description="Our smooth espresso with steamed milk and a sweet caramel drizzle."
+                        data-img="https://www.splenda.com/wp-content/uploads/2024/06/Iced-Brown-Sugar-Caramel-Latte-website-7437-2000x1000.jpg"
+                        data-dietary="gf">
+                        <div class="menu-item-header">
+                            <h4>Caramel Latte</h4>
+                            <span class="menu-item-price">$5.00</span>
+                        </div>
+                        <p class="menu-item-description">Espresso, steamed milk, and caramel drizzle.</p>
+                    </div>
+                </div>
+
+                <div id="iced-coffees" class="menu-category">
+                    <div class="menu-item" data-name="Classic Cold Brew" data-price="$4.75"
+                        data-description="Our signature 18-hour steep, smooth, rich, and refreshing."
+                        data-img="https://cdn.shopify.com/s/files/1/0601/8783/6659/files/Classic_Cold_Brew_faa3d103-9f4f-4683-a48c-574ad1d06c92.png?v=1750796804"
+                        data-dietary="vegan,gf">
+                        <div class="menu-item-header">
+                            <h4>Classic Cold Brew</h4>
+                            <span class="menu-item-price">$4.75</span>
+                        </div>
+                        <p class="menu-item-description">Our signature 18-hour steep, smooth and rich.</p>
+                    </div>
+                    <div class="menu-item" data-name="Iced Vanilla Latte" data-price="$5.25"
+                        data-description="Espresso, cold milk, and our house-made vanilla syrup served over ice."
+                        data-img="https://nielsenmassey.com/wp-content/uploads/2025/06/iced-vanilla-latte.jpg"
+                        data-dietary="gf">
+                        <div class="menu-item-header">
+                            <h4>Iced Vanilla Latte</h4>
+                            <span class="menu-item-price">$5.25</span>
+                        </div>
+                        <p class="menu-item-description">Espresso, cold milk, and house-made vanilla.</p>
+                    </div>
+                </div>
+
+                <div id="teas" class="menu-category">
+                    <div class="menu-item" data-name="Matcha Latte" data-price="$5.00"
+                        data-description="Ceremonial grade matcha green tea blended with your choice of steamed milk."
+                        data-img="https://instacuppastore.com/cdn/shop/articles/matcha-iced-latte-cover_ed9e7b2c-325b-4d99-bd39-6a53ae346d37.jpg?v=1779711655"
+                        data-dietary="vegan,gf">
+                        <div class="menu-item-header">
+                            <h4>Matcha Latte</h4>
+                            <span class="menu-item-price">$5.00</span>
+                        </div>
+                        <p class="menu-item-description">Ceremonial grade matcha with steamed milk.</p>
+                    </div>
+                </div>
+
+                <div id="pastries" class="menu-category">
+                    <div class="menu-item" data-name="Almond Croissant" data-price="$4.00"
+                        data-description="A flaky, buttery croissant filled with rich almond paste and topped with toasted almonds."
+                        data-img="https://www.simplyrecipes.com/thmb/UijSGX9q71RpSUkS3yfOloFL27I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Almond-Croissant-LEAD-8-07f51557bda7499aa6d1ccb4d079ea52.jpg"
+                        data-dietary="">
+                        <div class="menu-item-header">
+                            <h4>Almond Croissant</h4>
+                            <span class="menu-item-price">$4.00</span>
+                        </div>
+                        <p class="menu-item-description">Flaky croissant with rich almond paste.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="shop" class="page section-padding">
+            <div class="container">
+                <h2 class="text-center">Shop Our Blends</h2>
+
+                <div class="product-grid">
+                    <div class="shop-product-card">
+                        <img src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg"
+                            alt="Aura House Blend">
+                        <div class="shop-product-content">
+                            <h4>Aura House Blend</h4>
+                            <p class="shop-product-price">$16.00</p>
+                            <p>Our balanced, everyday blend. Notes of milk chocolate, citrus, and toffee.</p>
+                            <button class="btn add-to-cart-btn" data-id="1" data-name="Aura House Blend"
+                                data-price="16.00"
+                                data-img="https://source.unsplash.com/random/100x100/?coffeebeans,bag">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-product-card">
+                        <img src="https://i.pinimg.com/736x/ff/8c/eb/ff8ceb124036a9176942a4101e1a50ab.jpg"
+                            alt="Seasonal Single Origin">
+                        <div class="shop-product-content">
+                            <h4>Seasonal Single Origin</h4>
+                            <p class="shop-product-price">$18.50</p>
+                            <p>Currently: Ethiopia Yirgacheffe. Bright, floral, and tea-like.</p>
+                            <button class="btn add-to-cart-btn" data-id="2" data-name="Seasonal Single Origin"
+                                data-price="18.50"
+                                data-img="https://source.unsplash.com/random/100x100/?coffeebeans,dark">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-product-card">
+                        <img src="https://images.unsplash.com/photo-1625242662341-5e92c5101338?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29sZCUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="Aura Beans Mug">
+                        <div class="shop-product-content">
+                            <h4>Aura Beans Mug</h4>
+                            <p class="shop-product-price">$22.00</p>
+                            <p>12oz ceramic mug. Minimalist design to start your day right.</p>
+                            <button class="btn add-to-cart-btn" data-id="3" data-name="Aura Beans Mug"
+                                data-price="22.00"
+                                data-img="https://source.unsplash.com/random/100x100/?coffeemug,minimalist">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-product-card">
+                        <img src="https://source.unsplash.com/random/400x400/?coffee,filter" alt="Pour Over Kit">
+                        <div class="shop-product-content">
+                            <h4>Pour Over Kit</h4>
+                            <p class="shop-product-price">$45.00</p>
+                            <p>Everything you need to start brewing: dripper, filters, and a guide.</p>
+                            <button class="btn add-to-cart-btn" data-id="4" data-name="Pour Over Kit" data-price="45.00"
+                                data-img="https://source.unsplash.com/random/100x100/?coffee,filter">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="locations" class="page section-padding">
+            <div class="container">
+                <h2 class="text-center">Visit Us</h2>
+
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <h3>Downtown</h3>
+                        <ul>
+                            <li><strong>Address:</strong> 67 Main St, Anytown, USA ******</li>
+                            <li><strong>Phone:</strong> (111) 123-4567</li>
+                            <li><strong>Hours:</strong>
+                                <ul>
+                                    <li>Mon-Fri: 6am - 6pm</li>
+                                    <li>Sat-Sun: 7am - 5pm</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="location-card">
+                        <h3>Rivertown</h3>
+                        <ul>
+                            <li><strong>Address:</strong> 56 River Rd, Anytown, USA ******</li>
+                            <li><strong>Phone:</strong> (111) 123-4322</li>
+                            <li><strong>Hours:</strong>
+                                <ul>
+                                    <li>Mon-Fri: 7am - 7pm</li>
+                                    <li>Sat-Sun: 8am - 8pm</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="map-placeholder">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.3020313941215!2d-2.293915023745634!3d53.46306206598463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bae72e7e47f69%3A0x6c930e96df4455fe!2sOld%20Trafford!5e0!3m2!1sen!2sin!4v1749045121375!5m2!1sen!2sin"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page section-padding">
+            <div class="container">
+                <h2 class="text-center">Get In Touch</h2>
+
+                <div class="contact-container">
+                    <form id="contact-form">
+                        <div id="form-content">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name">
+                                <span class="form-error" id="name-error">Name is required.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                                <span class="form-error" id="email-error">A valid email is required.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"></textarea>
+                                <span class="form-error" id="message-error">Message is required.</span>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                        <div class="form-success" id="form-success">
+                            <h3>Thank you!</h3>
+                            <p>We've received your message and will be in touch soon.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Stay Caffeinated</h4>
+                    <p>Join our newsletter for new blends and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="your.email@example.com" aria-label="Email for newsletter">
+                        <button type="submit" aria-label="Subscribe to newsletter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#menu" class="nav-page-link">Menu</a></li>
+                        <li><a href="#shop" class="nav-page-link">Shop</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="#" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a></li>
+                        <li><a href="#" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a></li>
+                        <li><a href="#" aria-label="TikTok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 16V8a4 4 0 0 0-4-4h-4a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4z">
+                                    </path>
+                                    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path>
+                                    <path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2025 Aura Beans Coffee Co. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="menu-item-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="menu-modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <img id="menu-modal-img" src="" alt="Menu item">
+                <h3 id="menu-modal-name"></h3>
+                <span class="price" id="menu-modal-price"></span>
+                <p id="menu-modal-desc"></p>
+                <div class="dietary-icons" id="menu-modal-dietary">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="cart-modal-close" aria-label="Close cart modal">&times;</button>
+            <div class="modal-body">
+                <h3>Your Cart</h3>
+                <div id="cart-items-container">
+                    <p id="cart-empty-msg">Your cart is empty.</p>
+                </div>
+                <div class="cart-total">
+                    Total: <span id="cart-total-price">$0.00</span>
+                </div>
+                <div class="cart-modal-footer">
+                    <button class="btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            /* ------------------------- */
+            /* == 1. Sticky Header     == */
+            /* ------------------------- */
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            /* ------------------------- */
+            /* == 2. Page Navigation   == */
+            /* ------------------------- */
+            const navLinks = document.querySelectorAll('.nav-page-link');
+            const pages = document.querySelectorAll('.page');
+            const navLinkEls = document.querySelectorAll('.nav-link');
+            const mobileMenu = document.getElementById('nav-links');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href'); // e.g., "#menu"
+
+                    // Update Page Content
+                    pages.forEach(page => {
+                        if (`#${page.id}` === targetId) {
+                            page.classList.add('active');
+                        } else {
+                            page.classList.remove('active');
+                        }
+                    });
+
+                    // Update Active Nav Link
+                    navLinkEls.forEach(navLink => {
+                        if (navLink.getAttribute('href') === targetId) {
+                            navLink.classList.add('active');
+                        } else {
+                            navLink.classList.remove('active');
+                        }
+                    });
+
+                    // Close mobile menu on navigation
+                    if (mobileMenu.classList.contains('active')) {
+                        toggleMobileMenu();
+                    }
+
+                    // Scroll to top of page
+                    window.scrollTo(0, 0);
+                });
+            });
+
+            /* ------------------------- */
+            /* == 3. Mobile Menu Toggle == */
+            /* ------------------------- */
+            const menuToggle = document.getElementById('mobile-menu-toggle');
+            const menuIconOpen = document.getElementById('menu-icon-open');
+            const menuIconClose = document.getElementById('menu-icon-close');
+
+            const toggleMobileMenu = () => {
+                mobileMenu.classList.toggle('active');
+                const isOpen = mobileMenu.classList.contains('active');
+                menuIconOpen.style.display = isOpen ? 'none' : 'block';
+                menuIconClose.style.display = isOpen ? 'block' : 'none';
+                menuToggle.setAttribute('aria-expanded', isOpen);
+            };
+
+            menuToggle.addEventListener('click', toggleMobileMenu);
+
+            /* ------------------------- */
+            /* == 4. Home: Product Carousel == */
+            /* ------------------------- */
+            const track = document.getElementById('carousel-track');
+            const slides = Array.from(track.children);
+            const nextButton = document.getElementById('carousel-next');
+            const prevButton = document.getElementById('carousel-prev');
+            let slideWidth = slides[0].getBoundingClientRect().width;
+            let currentIndex = 0;
+
+            const updateSlideWidth = () => {
+                slideWidth = slides[0].getBoundingClientRect().width;
+                track.style.transition = 'none'; // Disable transition for resize
+                track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+                setTimeout(() => {
+                    track.style.transition = 'transform 0.5s ease-in-out'; // Re-enable
+                }, 50);
+            };
+
+            const moveToSlide = (index) => {
+                track.style.transform = `translateX(-${index * slideWidth}px)`;
+                currentIndex = index;
+            };
+
+            nextButton.addEventListener('click', () => {
+                let nextIndex = currentIndex + 1;
+                // Check if we are at the "fake" first slide (the clone)
+                if (nextIndex >= slides.length - 1) {
+                    moveToSlide(nextIndex); // Move to the clone
+                    // After transition, jump back to the real first slide
+                    setTimeout(() => {
+                        track.style.transition = 'none';
+                        moveToSlide(0);
+                    }, 500);
+                    // Re-enable transition after the jump
+                    setTimeout(() => {
+                        track.style.transition = 'transform 0.5s ease-in-out';
+                    }, 550);
+                } else {
+                    moveToSlide(nextIndex);
+                }
+            });
+
+            prevButton.addEventListener('click', () => {
+                let prevIndex = currentIndex - 1;
+                if (prevIndex < 0) {
+                    // Jump to the fake last slide (clone of first)
+                    track.style.transition = 'none';
+                    moveToSlide(slides.length - 1);
+                    // Then animate to the real last slide
+                    setTimeout(() => {
+                        track.style.transition = 'transform 0.5s ease-in-out';
+                        moveToSlide(slides.length - 2);
+                    }, 50);
+                } else {
+                    moveToSlide(prevIndex);
+                }
+            });
+
+            window.addEventListener('resize', updateSlideWidth);
+            updateSlideWidth(); // Initial call
+
+            /* ------------------------- */
+            /* == 5. Home: Testimonials == */
+            /* ------------------------- */
+            const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+            let currentTestimonial = 0;
+
+            const showTestimonial = (index) => {
+                testimonialSlides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+            };
+
+            setInterval(() => {
+                currentTestimonial = (currentTestimonial + 1) % testimonialSlides.length;
+                showTestimonial(currentTestimonial);
+            }, 5000); // Change slide every 5 seconds
+
+            /* ------------------------- */
+            /* == 6. Menu: Tabs        == */
+            /* ------------------------- */
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const menuCategories = document.querySelectorAll('.menu-category');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const target = button.dataset.target; // e.g., "#hot-coffees"
+
+                    // Update button active state
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    // Show/hide content
+                    menuCategories.forEach(category => {
+                        if (`#${category.id}` === target) {
+                            category.classList.add('active');
+                        } else {
+                            category.classList.remove('active');
+                        }
+                    });
+                });
+            });
+
+            /* ------------------------- */
+            /* == 7. Menu: Item Modal  == */
+            /* ------------------------- */
+            const menuModal = document.getElementById('menu-item-modal');
+            const menuModalClose = document.getElementById('menu-modal-close');
+            const menuItems = document.querySelectorAll('.menu-item');
+
+            const menuModalImg = document.getElementById('menu-modal-img');
+            const menuModalName = document.getElementById('menu-modal-name');
+            const menuModalPrice = document.getElementById('menu-modal-price');
+            const menuModalDesc = document.getElementById('menu-modal-desc');
+            const menuModalDietary = document.getElementById('menu-modal-dietary');
+
+            menuItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    // Populate modal
+                    menuModalImg.src = item.dataset.img;
+                    menuModalImg.alt = item.dataset.name;
+                    menuModalName.textContent = item.dataset.name;
+                    menuModalPrice.textContent = item.dataset.price;
+                    menuModalDesc.textContent = item.dataset.description;
+
+                    // Populate dietary icons
+                    menuModalDietary.innerHTML = '';
+                    if (item.dataset.dietary) {
+                        const dietaryTags = item.dataset.dietary.split(',');
+                        dietaryTags.forEach(tag => {
+                            const span = document.createElement('span');
+                            span.className = `dietary-icon ${tag}`;
+                            span.textContent = tag.toUpperCase();
+                            menuModalDietary.appendChild(span);
+                        });
+                    }
+
+                    // Show modal
+                    menuModal.classList.add('active');
+                });
+            });
+
+            const closeMenuModal = () => menuModal.classList.remove('active');
+            menuModalClose.addEventListener('click', closeMenuModal);
+
+            /* ------------------------- */
+            /* == 8. Cart System       == */
+            /* ------------------------- */
+            let cart = [];
+            const cartIconBtn = document.getElementById('cart-icon-btn');
+            const cartModal = document.getElementById('cart-modal');
+            const cartModalClose = document.getElementById('cart-modal-close');
+            const cartBadge = document.getElementById('cart-badge');
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+            const cartItemsContainer = document.getElementById('cart-items-container');
+            const cartEmptyMsg = document.getElementById('cart-empty-msg');
+            const cartTotalPrice = document.getElementById('cart-total-price');
+
+            const openCartModal = () => cartModal.classList.add('active');
+            const closeCartModal = () => cartModal.classList.remove('active');
+
+            cartIconBtn.addEventListener('click', openCartModal);
+            cartModalClose.addEventListener('click', closeCartModal);
+
+            // Close modal on overlay click
+            [menuModal, cartModal].forEach(modal => {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.classList.remove('active');
+                    }
+                });
+            });
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    // Find the parent product card of the clicked button
+                    const productCard = e.target.closest('.shop-product-card');
+                    // Grab the 'src' of the actual image displayed on that card
+                    const actualDisplayedImage = productCard.querySelector('img').src;
+
+                    const product = {
+                        id: button.dataset.id,
+                        name: button.dataset.name,
+                        price: parseFloat(button.dataset.price),
+                        img: actualDisplayedImage, // Use the real image instead of the data-img attribute!
+                    };
+
+                    cart.push(product);
+                    updateCart();
+                });
+            });
+
+            function updateCart() {
+                // Update Badge
+                if (cart.length > 0) {
+                    cartBadge.textContent = cart.length;
+                    cartBadge.classList.add('active');
+                } else {
+                    cartBadge.classList.remove('active');
+                }
+
+                // Update Modal
+                if (cart.length === 0) {
+                    cartEmptyMsg.style.display = 'block';
+                    cartItemsContainer.innerHTML = ''; // Clear items
+                    cartItemsContainer.appendChild(cartEmptyMsg);
+                } else {
+                    cartEmptyMsg.style.display = 'none';
+                    cartItemsContainer.innerHTML = ''; // Clear before render
+                    let total = 0;
+
+                    cart.forEach(item => {
+                        total += item.price;
+                        const itemEl = document.createElement('div');
+                        itemEl.className = 'cart-item';
+                        itemEl.innerHTML = `
+                            <img src="${item.img}" alt="${item.name}">
+                            <div class="cart-item-info">
+                                <h5>${item.name}</h5>
+                                <span class="cart-item-price">$${item.price.toFixed(2)}</span>
+                            </div>
+                        `;
+                        cartItemsContainer.appendChild(itemEl);
+                    });
+
+                    cartTotalPrice.textContent = `$${total.toFixed(2)}`;
+                }
+            }
+
+            /* ------------------------- */
+            /* == 9. Contact Form      == */
+            /* ------------------------- */
+            const contactForm = document.getElementById('contact-form');
+            const formContent = document.getElementById('form-content');
+            const formSuccess = document.getElementById('form-success');
+
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+
+            const nameError = document.getElementById('name-error');
+            const emailError = document.getElementById('email-error');
+            const messageError = document.getElementById('message-error');
+
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                let isValid = true;
+
+                // Reset errors
+                nameError.style.display = 'none';
+                emailError.style.display = 'none';
+                messageError.style.display = 'none';
+                nameInput.style.borderColor = 'var(--border-color)';
+                emailInput.style.borderColor = 'var(--border-color)';
+                messageInput.style.borderColor = 'var(--border-color)';
+
+                // Validate Name
+                if (nameInput.value.trim() === '') {
+                    nameError.style.display = 'block';
+                    nameInput.style.borderColor = 'red';
+                    isValid = false;
+                }
+
+                // Validate Email
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(emailInput.value)) {
+                    emailError.style.display = 'block';
+                    emailInput.style.borderColor = 'red';
+                    isValid = false;
+                }
+
+                // Validate Message
+                if (messageInput.value.trim() === '') {
+                    messageError.style.display = 'block';
+                    messageInput.style.borderColor = 'red';
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    // On success:
+                    formContent.style.display = 'none';
+                    formSuccess.style.display = 'block';
+                }
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
