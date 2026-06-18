@@ -1,4 +1,4 @@
-# SIGMAA Beans - E-Commerce Platform
+# Roast Beans - E-Commerce Platform
 
 SIGMAA Beans is a full-stack, responsive e-commerce web application built for an artisanal coffee shop.  
 The application allows users to browse coffee products, add items to a shopping cart, view cart totals, and complete checkout using Stripe.
